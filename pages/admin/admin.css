@@ -144,3 +144,22 @@ th {
   background-color: #4caf50;
   color: white;
 }
+
+.loginButtonAuth {
+  background-color: black;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) ease-in-out all;
+  width: 265px;
+  margin-top: 10px;
+}
+
+.loginButtonAuth:hover {
+  background-color: #ffffff;
+  color: black;
+  border: 2px solid black;
+}
