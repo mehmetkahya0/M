@@ -64,7 +64,12 @@ h4 {
   font-size: 0.75rem;
   margin-left: 1rem;
   opacity: 0.5;
-  
+  transition: 0.3s ease-in-out opacity !important;
+}
+
+h4:hover {
+  opacity: 1;
+  cursor: cell;
 }
 
 .container {
@@ -121,6 +126,30 @@ h4 {
 .comments i {
   margin-right: 5px;
   color: #f26a2e;
+}
+
+.like-button {
+  background-color: #000000; /* Green background */
+  color: white; /* White text */
+  padding: 5px 20px; /* Padding around the text */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  transition: background-color 0.3s; /* Smooth background color transition on hover */
+  margin-right: 1rem;
+}
+
+.like-button:hover {
+  background-color: #1f1f1f; /* Darker shade of green on hover */
+}
+
+.like-button:focus {
+  outline: none; /* Removes the outline to keep the design clean */
+}
+
+.like-button i {
+  margin-right: 5px; /* Space between icon and text */
 }
 
 img {
