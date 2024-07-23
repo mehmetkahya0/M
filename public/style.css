@@ -164,3 +164,67 @@ h3 {
 .fas {
   color: #333;
 }
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .post {
+    max-width: 500px; /* Slightly smaller posts for tablet screens */
+  }
+
+  header,
+  .post-content p,
+  .like-button {
+    font-size: small; /* Adjust font size for readability */
+  }
+
+  .icons a {
+    font-size: 0.9rem; /* Smaller icons */
+  }
+
+  .post-header,
+  .post-footer {
+    padding: 5px; /* Smaller padding for smaller screens */
+    font-size: smaller
+  }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 480px) {
+  .container {
+    margin: 10px; /* Less margin for more space */
+  }
+
+  .post {
+    max-width: 100%; /* Full width for mobile screens */
+    width: auto; /* Adjust width to fit small screens */
+  }
+
+  header,
+  .post-content p,
+  .like-button {
+    font-size: smaller; /* Even smaller text for mobile readability */
+  }
+
+  .icons {
+    margin-right: 1rem; /* Adjust icon spacing */
+  }
+
+  .icons a {
+    margin: 0 0.3rem; /* Less space between icons */
+  }
+
+  .post-header,
+  .post-footer {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: start;
+  }
+
+  .likes,
+  .comments {
+    margin: 5px 0; /* Add space between likes and comments */
+  }
+
+  .like-button {
+    padding: 10px 15px; /* Larger touch targets */
+  }
+}
