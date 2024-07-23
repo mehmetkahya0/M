@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>share post</title>
-    <link rel="stylesheet" href="public/style.css" />
+    <title>M_admin_panel</title>
+    <link rel="stylesheet" href="/public/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,37 +19,17 @@
       src="https://kit.fontawesome.com/a8517c2fd8.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="post.css" />
+    <link rel="stylesheet" href="admin.css" />
   </head>
   <body>
     <header>
-      Welcome to M
+      Welcome to M_Admin-panel
       <div class="icons">
-        <a href=""><i class="fas fa-feather-alt"></i></a>
+        <a href="/pages/post/post.html"><i class="fas fa-feather-alt"></i></a>
         <a href="/pages/settings/settings.html"><i class="fas fa-cog"></i></a>
-        <a href="/pages/admin/admin.html"><i class="fas fa-user"></i></a>
+        <a href=""><i class="fas fa-user"></i></a>
         <a href="/index.html"><i class="fas fa-home"></i></a>
       </div>
     </header>
-    <div class="container">
-      <!-- Username Input -->
-      <div class="username-container">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" />
-      </div>
-      <!-- Post Content Text Area -->
-      <div class="post-content-container">
-        <label for="postContent">Post Content:</label>
-        <textarea
-          id="postContent"
-          name="postContent"
-          rows="4"
-          cols="50"
-        ></textarea>
-      </div>
-      <!-- Share Post Button -->
-      <button id="sharePostButton">Share Post</button>
-    </div>
-    <script src="post.js"></script>
   </body>
 </html>
