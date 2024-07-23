@@ -65,11 +65,13 @@ h4 {
   margin-left: 1rem;
   opacity: 0.5;
   transition: 0.3s ease-in-out opacity !important;
+  width: fit-content;
 }
 
 h4:hover {
   opacity: 1;
   cursor: cell;
+  caret-color: red;
 }
 
 .container {
@@ -184,7 +186,7 @@ h3 {
   .post-header,
   .post-footer {
     padding: 5px; /* Smaller padding for smaller screens */
-    font-size: smaller
+    font-size: smaller;
   }
 }
 
