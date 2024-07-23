@@ -24,6 +24,7 @@ body {
 }
 
 header {
+  font-weight: bolder !important;
   color: var(--font-dark-color);
   background-color: var(--white-color);
   width: 100%;
