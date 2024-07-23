@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #f26a2e;
+  --secondary-color: #f26a2e;
+  --background-dark-color: #10121a;
+  --background-dark-grey: #191d2b;
+  --border-color: #2e344e;
+  --background-light-color: #f1f1f1;
+  --background-light-color-2: rgba(3, 127, 255, 0.3);
+  --white-color: #fff;
+  --dark-color: #333;
+  --font-light-color: #a4acc4;
+  --font-dark-color: #313131;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--white-color);
+  color: var(--font-dark-color);
+}
+
+header {
+  color: var(--font-dark-color);
+  background-color: var(--white-color);
+  width: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-weight: 600;
+  font-size: larger;
+  margin-top: 1rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around; /* Changed from space-between to space-around for better spacing */
+  width: auto; /* Changed from 10% to auto for better flexibility */
+  margin-right: 2rem; /* Adjusted from 5rem to 2rem for better alignment */
+}
+
+.icons a {
+  color: var(--dark-color);
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 0.5rem; /* Adjusted margin for better spacing */
+}
+
+.icons a:hover {
+  color: var(
+    --primary-color
+  ); /* Ensure there are no line breaks inside var() */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.post {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  width: 600px;
+}
+
+.post-header,
+.post-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.post-header {
+  justify-content: start;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-content p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.post-footer {
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  border-bottom: none;
+}
+
+.likes,
+.comments {
+  display: flex;
+  align-items: center;
+}
+
+.likes i,
+.comments i {
+  margin-right: 5px;
+  color: #f26a2e;
+}
+
+img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.fas {
+  color: #333;
+}
