@@ -85,7 +85,7 @@ button,
 
 button:hover,
 .button:hover {
-  background-color: darken(var(--primary-color), 10%);
+  background-color: black;
 }
 
 /* Forms */
