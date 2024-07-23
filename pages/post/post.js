@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         let posts = JSON.parse(localStorage.getItem("posts")) || [];
-        posts.push({ username: username, content: postContent });
+        posts.push({ username: "@"+username, content: postContent });
         localStorage.setItem("posts", JSON.stringify(posts));
 
         // Dynamically set the redirection path to ensure it works in different environments
