@@ -59,6 +59,14 @@ header {
   ); /* Ensure there are no line breaks inside var() */
 }
 
+h4 {
+  font-weight: bolder;
+  font-size: 0.75rem;
+  margin-left: 1rem;
+  opacity: 0.5;
+  
+}
+
 .container {
   display: flex;
   flex-direction: column;

@@ -1,61 +1,146 @@
 :root {
-    --primary-color: #f26a2e;
-    --secondary-color: #f26a2e;
-    --background-dark-color: #10121a;
-    --background-dark-grey: #191d2b;
-    --border-color: #2e344e;
-    --background-light-color: #f1f1f1;
-    --background-light-color-2: rgba(3, 127, 255, 0.3);
-    --white-color: #fff;
-    --dark-color: #333;
-    --font-light-color: #a4acc4;
-    --font-dark-color: #313131;
-  }
-  
-  * {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  --primary-color: #f26a2e;
+  --secondary-color: #f26a2e;
+  --background-dark-color: #10121a;
+  --background-dark-grey: #191d2b;
+  --border-color: #2e344e;
+  --background-light-color: #f1f1f1;
+  --background-light-color-2: rgba(3, 127, 255, 0.3);
+  --white-color: #fff;
+  --dark-color: #333;
+  --font-light-color: #a4acc4;
+  --font-dark-color: #313131;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--font-dark-color);
+  font-size: 16px; /* Improved readability */
+  line-height: 1.6; /* Improved readability */
+}
+
+@media screen and (max-width: 768px) {
   body {
-    background-color: var(--white-color);
-    color: var(--font-dark-color);
+    font-size: 14px; /* Slightly smaller font size for smaller devices */
   }
-  
-  header {
-    margin-left: 0.5rem;
-    font-weight: bolder !important;
-    color: var(--font-dark-color);
-    background-color: var(--white-color);
-    width: 100%;
-    position: relative;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    font-weight: 600;
-    font-size: larger;
-    margin-top: 1rem;
+}
+
+/* Responsive Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller headings on smaller screens */
   }
-  
-  .icons {
-    display: flex;
-    justify-content: space-around; /* Changed from space-between to space-around for better spacing */
-    width: auto; /* Changed from 10% to auto for better flexibility */
-    margin-right: 2rem; /* Adjusted from 5rem to 2rem for better alignment */
+
+  h2 {
+    font-size: 1.75rem;
   }
-  
-  .icons a {
-    color: var(--dark-color);
-    text-decoration: none;
-    font-size: 1rem;
-    margin: 0 0.5rem; /* Adjusted margin for better spacing */
+
+  h3 {
+    font-size: 1.5rem;
   }
-  
-  .icons a:hover {
-    color: var(
-      --primary-color
-    ); /* Ensure there are no line breaks inside var() */
-  }
-  
+}
+
+/* Buttons */
+button,
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white-color);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.button:hover {
+  background-color: darken(var(--primary-color), 10%);
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-light-color);
+  color: var(--font-dark-color);
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+}
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
